@@ -1,0 +1,80 @@
+/* Styles for the call log app */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.phone-call {
+    margin-bottom: 20px;
+}
+
+.phone-call input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.phone-call button {
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.phone-call button:hover {
+    background-color: #45a049;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #007B9A;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tabs .tab {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.tabs .tab:hover {
+    background-color: #ddd;
+}
+
+.log-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.log-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}

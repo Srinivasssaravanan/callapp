@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Log App</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Call Log App</h1>
+
+        <!-- Make Call Section -->
+        <div class="phone-call">
+            <input type="text" id="phoneNumber" placeholder="Enter phone number" />
+            <button onclick="makeCall()">Make Call</button>
+        </div>
+
+        <!-- Display Contact Details Before Call -->
+        <div id="contactDetails"></div>
+
+        <!-- Fetch Call Logs Section -->
+        <div class="buttons">
+            <button onclick="loadCallLogs()">Fetch Call Logs</button>
+        </div>
+
+        <!-- Tabs to Display Call Logs -->
+        <div class="tabs">
+            <button class="tab" onclick="showTab('incoming')">Incoming Calls</button>
+            <button class="tab" onclick="showTab('outgoing')">Outgoing Calls</button>
+            <button class="tab" onclick="showTab('missed')">Missed Calls</button>
+        </div>
+
+        <!-- Call Logs -->
+        <ul id="incomingCalls" class="tab-content"></ul>
+        <ul id="outgoingCalls" class="tab-content"></ul>
+        <ul id="missedCalls" class="tab-content"></ul>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
